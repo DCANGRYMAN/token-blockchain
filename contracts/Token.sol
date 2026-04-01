@@ -7,7 +7,7 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 contract TerrenoToken is ERC20, Ownable {
     mapping(address => bool) public whitelist;
 
-    constructor() ERC20("TerrenoToken", "TTK") {
+    constructor() ERC20("TerrenoToken", "TTK") Ownable(msg.sender) {
         _mint(msg.sender, 1000000 * 10 ** 18);
     }
 
