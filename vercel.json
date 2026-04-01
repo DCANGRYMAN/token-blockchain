@@ -1,0 +1,12 @@
+{
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 10
+    }
+  },
+  "env": [
+    "PRIVATE_KEY",
+    "SEPOLIA_RPC_URL",
+    "CONTRACT_ADDRESS"
+  ]
+}
